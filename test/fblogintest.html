@@ -1,0 +1,54 @@
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '323884005467375',
+        xfbml      : true,
+        version    : 'v9.0'
+      });
+      FB.AppEvents.logPageView();
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!--https://developers.facebook.com/docs/facebook-login/web/#-->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v9.0&appId=323884005467375&autoLogAppEvents=1" nonce="vWZBURQm"></script><body>
+
+    <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="true" data-use-continue-as="true"></div>
+    <p>Check out the console to see if anything appears.</p>
+    <p>HERE'S THE CODE:</p>
+
+    
+    
+    <div
+class="fb-like"
+data-share="true"
+data-width="450"
+data-show-faces="true">
+</div>
+
+
+
+</body>
+<script>
+FB.login(function(response) {
+    if (response.authResponse) {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me', function(response) {
+       console.log('Good to see you, ' + response.name + '.');
+     });
+    } else {
+     console.log('User cancelled login or did not fully authorize.');
+    }
+});
+
+
+
+</script>
