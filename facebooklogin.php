@@ -73,6 +73,6 @@
 <!--<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>-->
 
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v9.0&appId=3456852264442999&autoLogAppEvents=1" nonce="vWZBURQm"></script><body>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v9.0&appId=id&autoLogAppEvents=1" nonce="vWZBURQm"></script><body>
 </body>
 </html>
